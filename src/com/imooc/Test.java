@@ -6,7 +6,7 @@ package com.imooc;
 public class Test {
 
     public static void main(String[] args) {
-        //¶öººÄ£Ê½
+        //é¥¿æ±‰æ¨¡å¼
 //        Singleton s1 = Singleton.instance;
 //        Singleton s2 = Singleton.instance;
         Singleton s1 = Singleton.getInstance();
@@ -14,19 +14,19 @@ public class Test {
 
 
         if (s1 == s2) {
-            System.out.println("s1Óës2ÎªÍ¬Ò»¸öÊµÀı");
+            System.out.println("s1ä¸s2ä¸ºåŒä¸€ä¸ªå®ä¾‹");
         } else {
-            System.out.println("12²»ÊÇÒ»¸öÊµÀı");
+            System.out.println("12ä¸æ˜¯ä¸€ä¸ªå®ä¾‹");
         }
 
-        //ÀÁººÄ£Ê½
+        //æ‡’æ±‰æ¨¡å¼
         //Singleton2 s3 = Singleton2.getInstance();
         Singleton2 s3 = Singleton2.getInstance();
         Singleton2 s4 = Singleton2.getInstance();
         if (s3 == s4) {
-            System.out.println("s3Óës4ÎªÍ¬Ò»¸öÊµÀı");
+            System.out.println("s3ä¸s4ä¸ºåŒä¸€ä¸ªå®ä¾‹");
         } else {
-            System.out.println("34²»ÊÇÒ»¸öÊµÀı");
+            System.out.println("34ä¸æ˜¯ä¸€ä¸ªå®ä¾‹");
         }
 
     }

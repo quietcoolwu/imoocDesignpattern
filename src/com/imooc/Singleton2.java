@@ -3,19 +3,19 @@ package com.imooc;
 /**
  * Created by William on 2015/10/8.
  * <p>
- * ÀÁººÄ£Ê½
- * ¼ÓÔØÀàÊ±±È½Ï¿ì,ÔÚ¼ÓÔØÀàÊ±Ã»ÓĞ´´½¨¶ÔÏó,ÔËĞĞÊ±»ñÈ¡¶ÔÏóµÄËÙ¶ÈÂı,µ«´ËÏß³Ì²»°²È«
+ * æ‡’æ±‰æ¨¡å¼
+ * åŠ è½½ç±»æ—¶æ¯”è¾ƒå¿«,åœ¨åŠ è½½ç±»æ—¶æ²¡æœ‰åˆ›å»ºå¯¹è±¡,è¿è¡Œæ—¶è·å–å¯¹è±¡çš„é€Ÿåº¦æ…¢,ä½†æ­¤çº¿ç¨‹ä¸å®‰å…¨
  */
 public class Singleton2 {
-    //2.´´½¨ÀàµÄÎ¨Ò»ÊµÀı,Ê¹ÓÃprivate staticĞŞÊÎ
+    //2.åˆ›å»ºç±»çš„å”¯ä¸€å®ä¾‹,ä½¿ç”¨private staticä¿®é¥°
     private static Singleton2 instance;
 
-    //1.¹¹Ôì·½·¨Ë½ÓĞ»¯
+    //1.æ„é€ æ–¹æ³•ç§æœ‰åŒ–
     private Singleton2() {
 
     }
 
-    //3.Ìá¹©Ò»¸öÓÃÓÚ»ñÈ¡ÊµÀıµÄ·½·¨, Ê¹ÓÃpublic staticĞŞÊÎ
+    //3.æä¾›ä¸€ä¸ªç”¨äºè·å–å®ä¾‹çš„æ–¹æ³•, ä½¿ç”¨public staticä¿®é¥°
     public static Singleton2 getInstance() {
         if (instance == null) {
             instance = new Singleton2();
